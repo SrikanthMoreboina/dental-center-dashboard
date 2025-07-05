@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Base styles for consistent typography */
+@layer base {
+  h1, h2, h3 {
+    @apply font-main font-bold text-gray-900 tracking-tight;
+  }
+}
+
+/* Custom components for reusable UI */
+@layer components {
+  .clinic-btn {
+    @apply bg-clinicBlue text-white px-5 py-2.5 rounded-lg hover:bg-blue-800 transition-all duration-200;
+  }
+  .clinic-btn-secondary {
+    @apply bg-clinicGreen text-white px-5 py-2.5 rounded-lg hover:bg-green-700 transition-all duration-200;
+  }
+  .clinic-card {
+    @apply bg-white rounded-lg shadow-card p-5;
+  }
+  .clinic-table {
+    @apply w-full text-left border-collapse;
+  }
+  .clinic-table th {
+    @apply p-3 bg-softGray text-gray-700 font-semibold;
+  }
+  .clinic-table td {
+    @apply p-3 border-b border-gray-200;
+  }
+}
